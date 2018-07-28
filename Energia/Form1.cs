@@ -37,11 +37,12 @@ namespace Energia
             ManagementObjectCollection queryCollection = searcher.Get();
             foreach (ManagementObject m in queryCollection)
             {
-                // Display the remote computer information
+                Console.WriteLine("Testes de energia.");
                 Console.WriteLine("NormalMax : {0}",
                     m["NormalMax"]);
                 Console.WriteLine("CurrentReading: {0}",
                     m["CurrentReading"]);
+
             }
         }
 
